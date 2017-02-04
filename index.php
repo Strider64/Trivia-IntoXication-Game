@@ -68,6 +68,7 @@ January 31, 2017
                 var counter = 0;
                 if (timeLeft === 0) {
                     clearTimeout(timer);
+                    clock.style['color'] = "red";
                     clock.innerHTML = '00 seconds';
                     ajaxRoutine(5);
                 } else {
@@ -89,12 +90,18 @@ January 31, 2017
 
                 var xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function () {
-                    //console.log('readyState: ' + xhr.readyState);
+                    console.log('readyState: ' + xhr.readyState, 'xhr.status: ' + xhr.status);
+                    if (xhr.status === 410) {
+                        console.log("Game Over");
+                        next.innerHTML = "Game Over!";
+                        next.disabled = true;
+                        next.style['display'] = "block";
+                    }
                     if (xhr.readyState === 2) {
                     }
                     if (xhr.readyState === 4 && xhr.status === 200) {
                         var info = JSON.parse(xhr.responseText);
-                        console.log(info);
+                        //console.log(info);
                         if (info.question) {
                             question.innerHTML = info.question;
                             answer1.innerHTML = info.answer1;
@@ -118,7 +125,7 @@ January 31, 2017
                             next.style["display"] = "block";
                             correct.innerHTML = "&#10004; " + right;
                             wrongText.innerHTML = "&#88; " + wrong;
-                            console.log("You answered ", right, " right and ", wrong, " wrong out of a total ", total, " questions.");
+                            //console.log("You answered ", right, " right and ", wrong, " wrong out of a total ", total, " questions.");
                         }
                     }
                 }; // End of Ready State:
@@ -137,15 +144,15 @@ January 31, 2017
             function disableButtons() {
                 for (i = 0; i < buttons.length; i++) {
                     buttons.item(i).disabled = true;
-                    buttons[i].classList.remove('enable');
+                    buttons[i].classList.remove('enable'); // Disable hover feature by removing a class:
                 }
             }
 
             function enableButtons() {
                 for (i = 0; i < buttons.length; i++) {
-                    buttons.item(i).disabled = false;
-                    buttons[i].classList.remove('correct', 'wrong');
-                    buttons[i].classList.add('enable');
+                    buttons.item(i).disabled = false; // Make buttons clickable again:
+                    buttons[i].classList.remove('correct', 'wrong'); // Remove previous results by dropping classes:
+                    buttons[i].classList.add('enable'); // Enable hover feature by adding a class:
                 }
 
             }
@@ -162,8 +169,9 @@ January 31, 2017
             }
 
             function resetGame() {
+                clock.style['color'] = "green";
                 next.style['display'] = "none";
-                enableButtons();
+                enableButtons(); // Restore buttons back to normal function:
                 id += 1;
                 answer = null;
                 startTimer();
@@ -171,7 +179,7 @@ January 31, 2017
 
             }
 
-            next.addEventListener("click", resetGame);
+            next.addEventListener("click", resetGame); // Add next button addEventListener to the game:
 
 
         </script>

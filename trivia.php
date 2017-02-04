@@ -7,11 +7,6 @@ use website_project\trivia_game\OutputQA;
 /* Makes it so we don't have to decode the json coming from JQuery */
 header('Content-type: application/json');
 
-//function is_ajax_request() {
-//    $server = filter_input(INPUT_SERVER, 'HTTP_X_REQUESTED_WITH', FILTER_SANITIZE_URL);
-//    return isset($server) && $server == 'XMLHttpRequest';
-//}
-
 $gamePlay = new OutputQA();
 
 $id = filter_input(INPUT_POST, 'id');
@@ -44,7 +39,7 @@ if (isset($q_num) && isset($answer)) {
 }
 
 /*
- * Set error code then send message to Ajax/JQuery 
+ * Set error code then send message to Ajax / JavaScript
  */
 
 function errorOutput($output, $code = 500) {
@@ -53,7 +48,7 @@ function errorOutput($output, $code = 500) {
 }
 
 /*
- * If everything validates OK then send success message to Ajax/jQuery 
+ * If everything validates OK then send success message to Ajax / JavaScript
  */
 
 function output($output) {
