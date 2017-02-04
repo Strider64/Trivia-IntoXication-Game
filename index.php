@@ -10,13 +10,13 @@ January 31, 2017
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Trivia Quiz with JavaScript</title>
+        <title>Trivia IntoXication</title>
         <link rel="stylesheet" href="lib/css/stylesheet.css">
     </head>
     <body>
 
         <div id="heading">
-            <h1>Trivia Quiz with <span>JavaScript </span></h1>
+            <h1>Trivia<span>IntoXication</span></h1>
 
         </div>
 
