@@ -100,7 +100,7 @@ MAIN GAME CSS STYLING
 div#mainGame {
   display: block;
   width: 100%;
-  max-width: 37.50rem;
+  max-width: 40.625rem;
   height: auto;
   background-color: #2E2E2E;
   padding: 1.875rem;
@@ -138,7 +138,7 @@ div#controls {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 37.50rem;
+  max-width: 40.625rem;
   height: 5.000rem;
   background-color: #F19F4D;
   text-align: center;
@@ -149,7 +149,7 @@ div#controls {
     left: 20px;
     display: block;
     width: 100%;
-    max-width: 150px;
+    max-width: 185px;
     height: 3.125rem;
     margin-top: -1.563rem; }
     div#controls div#scoring h2 {
@@ -164,18 +164,18 @@ div#controls {
     top: 50%;
     left: 50%;
     display: block;
-    width: 7.500rem;
+    width: 12.500rem;
     height: 3.125rem;
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: #2E2E2E;
+    background-color: green;
     font-size: 1.4rem;
-    color: #F19F4D;
+    color: #fff;
     margin-top: -1.563rem;
-    margin-left: -3.750rem; }
+    margin-left: -6.250rem; }
     div#controls button#next:hover {
-      background-color: #a55318;
+      background-color: #004d00;
       color: #fff; }
   div#controls div#timer {
     position: absolute;
@@ -185,12 +185,11 @@ div#controls {
     width: 100%;
     max-width: 150px;
     height: 3.125rem;
-    background-color: #2e2e2e;
     margin-top: -1.563rem; }
     div#controls div#timer h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 3.125rem;
-      color: #F19F4D;
+      color: green;
       text-transform: capitalize; }
 
 .correct {
@@ -201,3 +200,5 @@ div#controls {
 
 .wrongText {
   color: red; }
+
+/*# sourceMappingURL=stylesheet.css.map */
