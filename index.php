@@ -30,10 +30,13 @@ January 31, 2017
             <button id="answer4" class="answers enable" data-answer="4">&nbsp;</button>
         </div>
         <div id="controls">
+            <div id="scoring">
+                <h2><span id="correct">&#10004;  0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="wrongText">&#88; 0</span></h2>
+            </div>
+            <button id="next">Next</button>
             <div id="timer">
                 <h2 id="clock">30 seconds</h2>
             </div>
-            <button id="next">Next</button>
         </div>
         <script>
             var question = document.getElementById("question");
@@ -44,6 +47,8 @@ January 31, 2017
             var next = document.getElementById("next");
             var controls = document.getElementById("controls");
             var buttons = document.getElementsByClassName("answers");
+            var correct = document.getElementById("correct");
+            var wrongText = document.getElementById("wrongText");
             var id = 1;
             var check = "";
             var right = 0;
@@ -111,6 +116,8 @@ January 31, 2017
                             }
                             clearInterval(timer);
                             next.style["display"] = "block";
+                            correct.innerHTML = "&#10004; " + right;
+                            wrongText.innerHTML = "&#88; " + wrong;
                             console.log("You answered ", right, " right and ", wrong, " wrong out of a total ", total, " questions.");
                         }
                     }
