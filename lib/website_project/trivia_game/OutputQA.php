@@ -23,7 +23,7 @@ class OutputQA {
     public function readQA($q_num) {
         $db = DB::getInstance();
         $this->pdo = $db->getConnection();
-        $this->query = "SELECT id, q_num, question, answer1, answer2, answer3, answer4, play_date FROM the_daily_ten WHERE q_num=:q_num";
+        $this->query = "SELECT id, q_num, question, answer1, answer2, answer3, answer4, correct, play_date FROM the_daily_ten WHERE q_num=:q_num";
         $this->stmt = $this->pdo->prepare($this->query);
         $this->stmt->execute([':q_num' => $q_num]);
         $this->data = $this->stmt->fetchAll(PDO::FETCH_OBJ);
