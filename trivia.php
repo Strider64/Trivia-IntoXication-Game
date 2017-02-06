@@ -22,22 +22,6 @@ if (isset($id)) {
     }
 }
 
-$q_num = filter_input(INPUT_POST, 'q_num');
-$answer = filter_input(INPUT_POST, 'answer');
-
-
-if (isset($q_num) && isset($answer)) {
-
-    $result = $gamePlay->checkDailyTen($q_num, $answer);
-
-    if ($result) {
-        output($result);
-    } else {
-        $output = ['eof' => TRUE, 'message' => 'There are no more questions'];
-        errorOutput($output, 410);
-    }
-}
-
 /*
  * Set error code then send message to Ajax / JavaScript
  */
