@@ -21,11 +21,12 @@ class OutputQA {
     }
     
     public function readQA($q_num) {
+        $play_date = new DateTime("Now", new DateTimeZone("America/Detroit"));
         $db = DB::getInstance();
         $this->pdo = $db->getConnection();
-        $this->query = "SELECT id, q_num, question, answer1, answer2, answer3, answer4, correct, play_date FROM the_daily_ten WHERE q_num=:q_num";
+        $this->query = "SELECT id, q_num, question, answer1, answer2, answer3, answer4, correct, play_date FROM trivia_questions WHERE q_num=:q_num AND play_date=:play_date";
         $this->stmt = $this->pdo->prepare($this->query);
-        $this->stmt->execute([':q_num' => $q_num]);
+        $this->stmt->execute([':q_num' => $q_num, ':play_date' => $play_date->format("Y-m-d")]);
         $this->data = $this->stmt->fetchAll(PDO::FETCH_OBJ);
         if ($this->data) {
             return $this->data;
