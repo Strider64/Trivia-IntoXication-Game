@@ -1,91 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Raleway");
-/*  Color Theme*/
-.rounded {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px; }
-
-.top-rounded {
-  -moz-border-radius: 20px 20px 0 0;
-  -webkit-border-radius: 20px;
-  border-radius: 20px 20px 0 0; }
-
-.bottom-rounded {
-  -moz-border-radius: 0 0 20px 20px;
-  -webkit-border-radius: 0;
-  border-radius: 0 0 20px 20px; }
-
-.shadow {
-  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); }
-
-.inner-shadow {
-  -moz-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.5); }
-
-.one-edge-shadow {
-  -moz-box-shadow: 0 8px 4px -6px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 8px 4px -6px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 8px 4px -6px rgba(0, 0, 0, 0.4); }
-
-#radial-gradient {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjQ1cHgiIGN5PSI0NXB4IiByPSIzMCUiPjxzdG9wIG9mZnNldD0iMzMuMzMzMzMlIiBzdG9wLWNvbG9yPSIjMDBmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWU5MGZmIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -moz-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-  background-image: -webkit-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-  background-image: radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px); }
-
-#linear-gradient {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuMCIgeDI9IjEuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -moz-linear-gradient(top, #ffffff, #dddddd);
-  background-image: -webkit-linear-gradient(top, #ffffff, #dddddd);
-  background-image: linear-gradient(to bottom right, #ffffff, #dddddd); }
-
-#v-gradient {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FhYWFhYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #aaaaaa));
-  background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
-  background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
-  background-image: linear-gradient(#ffffff, #aaaaaa); }
-
-#v-gradient-2 {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYWFhYWFhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #cccccc), color-stop(100%, #aaaaaa));
-  background-image: -moz-linear-gradient(#ffffff, #cccccc, #aaaaaa);
-  background-image: -webkit-linear-gradient(#ffffff, #cccccc, #aaaaaa);
-  background-image: linear-gradient(#ffffff, #cccccc, #aaaaaa); }
-
-#v-gradient-3 {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIi8+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNiYmJiYmIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWFhYWEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(30%, #cccccc), color-stop(70%, #bbbbbb), color-stop(100%, #aaaaaa));
-  background-image: -moz-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
-  background-image: -webkit-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
-  background-image: linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa); }
-
-#h-gradient {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -moz-linear-gradient(left, #ffffff, #dddddd);
-  background-image: -webkit-linear-gradient(left, #ffffff, #dddddd);
-  background-image: linear-gradient(to right, #ffffff, #dddddd); }
-
-#angle-gradient-svg {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA5MTUwNiIgeTE9IjAuMTU4NDk0IiB4Mj0iMS4wOTE1MDYiIHkyPSIwLjg0MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJhYzM2MyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjY2Q4YzE0Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOWM0Y2MyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  width: 80px;
-  height: 80px; }
-
-/* 
-    Created on : Feb 16, 2016, 8:22:58 AM
-    Author     : strider64
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,14 +46,35 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*@import "partials/grids";*/
+/*  Color Theme*/
+/* 
+    Created on : Feb 16, 2016, 8:22:58 AM
+    Author     : strider64
+*/
+/*******************************************
+GENERAL CSS STYLING
+********************************************/
 * {
-  *zoom: 1;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  box-sizing: border-box; }
+
+.enable {
+  background-color: #F19F4D; }
+  .enable:hover {
+    background-color: #c86c10; }
+
+.disable {
+  background-color: #999999; }
+
+.correct {
+  background-color: green; }
+
+.wrong {
+  background-color: red; }
+
+.wrongText {
+  color: red; }
 
 body {
   background-color: #F2F2F2; }
@@ -154,167 +88,417 @@ h1, h2, h3, th {
 p, td {
   font-family: 'Raleway', sans-serif; }
 
-/*******************************************
-HEADING CSS STYLING
-********************************************/
-div#heading {
-  display: block;
-  width: 100%;
-  max-width: 75.000rem;
-  height: 100%;
-  min-height: 9.375rem;
-  background-color: #2E2E2E;
-  text-align: center;
-  padding: 20px;
-  margin: 1.250rem auto 0; }
-  div#heading h1 {
-    font-size: 3.2rem;
-    color: #fff; }
-    div#heading h1 span#toxic {
-      font-size: 4.4rem;
-      color: #F19F4D; }
-  div#heading h2#subheading {
+/* SMARTPHONE STYLING */
+@media only screen and (max-width: 480px) {
+  /*******************************************
+  HEADING CSS STYLING
+  ********************************************/
+  div#heading {
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: lightgreen;
-    font-style: italic; }
-
-/*******************************************
-MAIN GAME CSS STYLING
-********************************************/
-div#mainGame {
-  display: block;
-  width: 100%;
-  max-width: 40.625rem;
-  height: auto;
-  background-color: #2E2E2E;
-  padding: 1.875rem;
-  margin: 1.250rem auto 0; }
-  div#mainGame div#screen {
-    display: inline-block;
     width: 100%;
-    max-width: 37.500rem;
-    height: 12.500rem;
-    background-color: #909090;
+    max-width: 100%;
+    height: 100%;
+    min-height: 50px;
+    background-color: #2E2E2E;
+    text-align: center;
+    padding: 5px; }
+    div#heading h1 {
+      font-size: 1.2rem;
+      color: #fff; }
+      div#heading h1 span#toxic {
+        font-size: 1.8rem;
+        color: #F19F4D; }
+    div#heading h2#subheading {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.0rem;
+      line-height: 1.5;
+      color: lightgreen;
+      font-style: italic; }
+
+  /*******************************************
+  GAME CSS STYLING
+  ********************************************/
+  div#mainGame {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #2E2E2E;
     padding: 10px; }
-    div#mainGame div#screen h2#question {
+    div#mainGame div#screen {
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+      height: 200px;
+      background-color: #909090;
+      padding: 10px; }
+      div#mainGame div#screen h2#question {
+        font-size: 1.02rem;
+        line-height: 1.5;
+        color: #fff; }
+    div#mainGame button.answers {
+      display: block;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.0rem;
+      line-height: 50px;
+      color: #fff;
+      text-align: left;
+      padding: 0 10px;
+      margin: 5px 0; }
+    div#mainGame div#scoring {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background-color: #fff;
+      text-align: center; }
+      div#mainGame div#scoring h2 span#correct {
+        float: left;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        padding-left: 40px; }
+      div#mainGame div#scoring h2 span#wrongText {
+        float: right;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: red;
+        padding-right: 40px; }
+    div#mainGame div#display {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background-color: #F19F4D;
+      text-align: center; }
+      div#mainGame div#display h2#clock {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        text-transform: capitalize;
+        padding-left: 40px; }
+      div#mainGame div#display button#next {
+        float: right;
+        display: block;
+        width: 100px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 1.2rem;
+        color: green;
+        margin-top: 10px;
+        margin-right: 40px; }
+        div#mainGame div#display button#next:hover {
+          color: #2E2E2E; }
+
+  div#info {
+    border: 10px solid #2e2e2e;
+    background-color: #F19F4D;
+    padding: 10px; }
+    div#info p {
+      font-size: 1.0rem;
+      line-height: 1.5;
+      font-weight: bold; }
+
+  div#myFooter {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: #2e2e2e;
+    text-align: center;
+    margin-top: 10px; }
+    div#myFooter p.footer-text {
+      font-size: 1.2rem;
+      line-height: 40px;
+      color: #fff; } }
+/* TABLET STYLING */
+@media only screen and (min-width: 481px) and (max-width: 977px) {
+  /*******************************************
+  HEADING CSS STYLING
+  ********************************************/
+  div#heading {
+    display: block;
+    width: 100%;
+    max-width: 75.000rem;
+    height: 100%;
+    min-height: 9.375rem;
+    background-color: #2E2E2E;
+    text-align: center;
+    padding: 1.250rem;
+    margin-bottom: 1.250rem; }
+    div#heading h1 {
+      font-size: 3.2rem;
+      color: #fff; }
+      div#heading h1 span#toxic {
+        font-size: 4.4rem;
+        color: #F19F4D; }
+    div#heading h2#subheading {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: lightgreen;
+      font-style: italic; }
+
+  div#mainGame {
+    clear: both;
+    display: block;
+    width: 100%;
+    max-width: 489px;
+    height: auto;
+    background-color: #2e2e2e;
+    margin: 0 auto; }
+    div#mainGame div#screen {
+      display: inline-block;
+      width: 100%;
+      max-width: 489px;
+      height: 12.500rem;
+      background-color: #909090;
+      padding: 10px; }
+      div#mainGame div#screen h2#question {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #fff; }
+    div#mainGame button.answers {
+      display: block;
+      width: 100%;
+      max-width: 489px;
+      height: 50px;
+      border: none;
+      border-bottom: 2px solid #2e2e2e;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.0rem;
+      line-height: 50px;
+      color: #fff;
+      text-align: left;
+      padding: 0 10px;
+      margin: 0; }
+    div#mainGame div#scoring {
+      display: block;
+      width: 100%;
+      max-width: 489px;
+      height: 50px;
+      background-color: #fff;
+      text-align: center; }
+      div#mainGame div#scoring h2 span#correct {
+        float: left;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        padding-left: 40px; }
+      div#mainGame div#scoring h2 span#wrongText {
+        float: right;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: red;
+        padding-right: 40px; }
+    div#mainGame div#display {
+      display: block;
+      width: 100;
+      max-width: 489px;
+      height: 50px;
+      background-color: #F19F4D;
+      text-align: center; }
+      div#mainGame div#display h2#clock {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        text-transform: capitalize;
+        padding-left: 40px; }
+      div#mainGame div#display button#next {
+        float: right;
+        display: block;
+        width: 160px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 1.2rem;
+        color: green;
+        margin-top: 10px;
+        margin-right: 40px; }
+        div#mainGame div#display button#next:hover {
+          color: #2E2E2E; }
+
+  div#info {
+    clear: both;
+    display: block;
+    width: 100%;
+    max-width: 489px;
+    height: 500px;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px auto; }
+    div#info p {
       font-size: 1.2rem;
       line-height: 1.5;
-      color: #fff; }
-  div#mainGame button.answers {
+      font-weight: bold; }
+
+  #myFooter {
+    clear: both;
     display: block;
-    width: 100%;
-    height: 2.500rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.4rem;
-    line-height: 2.500rem;
-    color: #fff;
-    text-align: left;
-    padding: 0 10px;
-    margin: 0.938rem 0; }
-  div#mainGame p#gameOver {
-    font-size: 1.4rem;
-    color: #fff;
+    width: 489px;
+    height: 50px;
+    background-color: #000;
     text-align: center;
-    margin-top: 50px; }
-
-.enable {
-  background-color: #F19F4D; }
-  .enable:hover {
-    background-color: #c86c10; }
-
-.disable {
-  background-color: #999999; }
-
-/*******************************************
-CONTROLS CSS STYLING
-********************************************/
-div#controls {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 40.625rem;
-  height: 5.000rem;
-  background-color: #F19F4D;
-  text-align: center;
-  margin: 0 auto 1.250rem; }
-  div#controls div#scoring {
-    position: absolute;
-    top: 50%;
-    left: 20px;
+    margin: 0 auto; }
+    #myFooter p {
+      font-size: 1.2rem;
+      line-height: 40px;
+      color: #fff; } }
+@media only screen and (min-width: 978px) {
+  div#container {
     display: block;
     width: 100%;
-    max-width: 185px;
-    height: 3.125rem;
-    margin-top: -1.563rem; }
-    div#controls div#scoring h2 {
-      font-size: 1.8rem;
-      line-height: 3.125rem;
-      color: green; }
-      div#controls div#scoring h2 span#wrongText {
-        font-weight: bold;
-        color: red; }
-  div#controls button#next {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    max-width: 978px;
+    height: 100%;
+    margin: 0 auto; }
+
+  /*******************************************
+  HEADING CSS STYLING
+  ********************************************/
+  div#heading {
     display: block;
-    width: 12.500rem;
-    height: 3.125rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: green;
-    font-size: 1.4rem;
-    color: #fff;
-    margin-top: -1.563rem;
-    margin-left: -6.250rem; }
-    div#controls button#next:hover {
-      background-color: #004d00;
+    width: 100%;
+    max-width: 75.000rem;
+    height: 100%;
+    min-height: 9.375rem;
+    background-color: #2E2E2E;
+    text-align: center;
+    padding: 1.250rem;
+    margin-bottom: 1.250rem; }
+    div#heading h1 {
+      font-size: 3.2rem;
       color: #fff; }
-  div#controls div#timer {
-    position: absolute;
-    top: 50%;
-    right: 40px;
+      div#heading h1 span#toxic {
+        font-size: 4.4rem;
+        color: #F19F4D; }
+    div#heading h2#subheading {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: lightgreen;
+      font-style: italic; }
+
+  div#mainGame {
+    float: left;
     display: block;
     width: 100%;
-    max-width: 150px;
-    height: 3.125rem;
-    margin-top: -1.563rem; }
-    div#controls div#timer h2 {
-      font-size: 1.4rem;
-      line-height: 3.125rem;
-      color: green;
-      text-transform: capitalize; }
+    max-width: 489px;
+    height: auto;
+    background-color: #2e2e2e; }
+    div#mainGame div#screen {
+      display: inline-block;
+      width: 100%;
+      max-width: 489px;
+      height: 12.500rem;
+      background-color: #909090;
+      padding: 20px; }
+      div#mainGame div#screen h2#question {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #fff; }
+    div#mainGame button.answers {
+      display: block;
+      width: 100%;
+      max-width: 489px;
+      height: 50px;
+      border: none;
+      border-bottom: 2px solid #2e2e2e;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.0rem;
+      line-height: 50px;
+      color: #fff;
+      text-align: left;
+      padding: 0 20px;
+      margin: 0; }
+    div#mainGame div#scoring {
+      display: block;
+      width: 100%;
+      max-width: 489px;
+      height: 50px;
+      background-color: #fff;
+      text-align: center; }
+      div#mainGame div#scoring h2 span#correct {
+        float: left;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        padding-left: 20px; }
+      div#mainGame div#scoring h2 span#wrongText {
+        float: right;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: red;
+        padding-right: 20px; }
+    div#mainGame div#display {
+      display: block;
+      width: 100;
+      max-width: 489px;
+      height: 50px;
+      background-color: #F19F4D;
+      text-align: center; }
+      div#mainGame div#display h2#clock {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        line-height: 50px;
+        color: green;
+        text-transform: capitalize;
+        padding-left: 20px; }
+      div#mainGame div#display button#next {
+        float: right;
+        display: block;
+        width: 100px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 1.2rem;
+        color: green;
+        margin-top: 10px;
+        margin-right: 20px; }
+        div#mainGame div#display button#next:hover {
+          color: #2E2E2E; }
 
-.correct {
-  background-color: green; }
+  div#info {
+    float: left;
+    display: block;
+    width: 100%;
+    max-width: 489px;
+    height: 500px;
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 10px; }
+    div#info p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: bold; }
 
-.wrong {
-  background-color: red; }
-
-.wrongText {
-  color: red; }
-
-/*******************************************
-FOOTER CSS STYLING
-********************************************/
-div#footer {
-  display: block;
-  width: 100%;
-  max-width: 75.000rem;
-  height: 100%;
-  min-height: 3.125rem;
-  background-color: #2E2E2E;
-  text-align: center;
-  margin: 0 auto; }
-  div#footer p.footer-text {
-    font-size: 1.2rem;
-    line-height: 3.125rem;
-    color: #F19F4D; }
+  #myFooter {
+    clear: both;
+    display: block;
+    width: 978px;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+    margin-top: 10px; }
+    #myFooter p {
+      font-size: 1.2rem;
+      line-height: 40px;
+      color: #fff; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
